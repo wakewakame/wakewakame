@@ -6,6 +6,7 @@ import { Content } from './components/Content';
 import { NotFound } from './components/NotFound';
 import { Work } from './components/Types';
 import HeaderSvg from './contents/header.svg';
+import TestImg from './contents/test.jpg';
 
 const Div = styled.div`
 	background-image: url(${HeaderSvg});
@@ -13,21 +14,23 @@ const Div = styled.div`
 `;
 
 export const App: React.FC = () => {
-	const createWork = (title: string) => {
+	const createWork = (title: string, date: string, desc: string) => {
 		const work: Work = {
 			title: title,
-			date: "",
-			thumbnail: "",
-			description: "",
+			date: date,
+			thumbnail: TestImg,
+			description: desc,
 			content: "",
 		};
 		return work;
 	};
 
 	const works: Work[] = [
-		createWork("work1"),
-		createWork("work2"),
-		createWork("work3"),
+		createWork("ポートフォリオ", "2021/02/13", "このサイト"),
+		createWork("GravityDesktop", "2020/02/13", "デスクトップ上のアイコンが落下します"),
+		createWork("GravityDesktop2", "20XX/02/13", "GravityDesktopの後継です"),
+		createWork("HydrangeaJS", "2021/XX/13", "WebGLを用いた自作UIフレームワークです"),
+		createWork("AudioNode", "2021/02/XX", "ノードベースで音声処理を行うサイトです"),
 	];
 
 	return (
