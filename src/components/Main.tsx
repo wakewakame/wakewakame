@@ -17,25 +17,20 @@ const CenterDiv = styled.div`
 `;
 
 const Buttons = styled.div`
-	margin-top: 72px;
+	margin-top: 24px;
 	margin-bottom: 72px;
 `;
 
 const Button = styled.div<{primary: boolean}>`
-	padding: 10px 30px;
-	margin: 0px 20px;
-	border-radius: 30px;
+	padding: 4px 20px;
+	border-radius: 10px;
 	display: inline;
-	font-weight: bold;
 	font-size: 36px;
-	border: solid #575757;
-	border-width: 3px;
+	font-weight: bold;
 	${({primary}) => primary ? `
-		background: #575757;
-		color: #f6f6f6;
-	` : `
-		background: #0000;
 		color: #575757;
+	` : `
+		color: #57575780;
 	`};
 `;
 
@@ -50,8 +45,8 @@ export const Main: React.FC<{ works: Work[] }> = props => {
 		<Div>
 			<CenterDiv>
 				<Buttons>
-					<Button primary={ view == 'works' } onClick={ viewWorks }>Works</Button>
-					<Button primary={ view == 'about' } onClick={ viewAbout }>About</Button>
+					<Button primary={ view == 'works' } onClick={ viewWorks }>作品</Button>
+					<Button primary={ view == 'about' } onClick={ viewAbout }>プロフィール</Button>
 				</Buttons>
 				{
 					(view == 'works') ? <Timeline works={ props.works }/> :

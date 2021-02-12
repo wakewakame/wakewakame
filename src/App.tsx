@@ -20,7 +20,7 @@ export const App: React.FC = () => {
 			date: date,
 			thumbnail: TestImg,
 			description: desc,
-			content: "",
+			content: desc
 		};
 		return work;
 	};

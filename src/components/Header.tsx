@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ProfileImg from '../contents/profile.png';
+import ProfileImg from '../contents/profile.jpg';
 
 const Div = styled.div`
 	width: 100vw;
@@ -16,28 +16,34 @@ const CenterDiv = styled.div`
 
 const Img = styled.img`
 	border-radius: 50%;
-	margin-top: min(115.2px, 19.2%);
-	width: min(280px, 44%);
-	height: min(280px, 44%);
+	margin-top: min(115.2px, 15.36vw);
+	width: min(280px, 35.2vw);
+	height: min(280px, 35.2vw);
 `;
 
 const Name = styled.p`
 	font-weight: bold;
 	font-size: min(40px, 6.25vw);
-	margin-top: min(38.4px, 6%);
-	margin-bottom: min(32.0px, 5%);
+	margin-top: min(38.4px, 4.8vw);
+	margin-bottom: min(8.0px, 1vw);
+	color: #575757;
+`;
+
+const Will = styled.p`
+	font-size: min(20px, 3.12vw);
+	margin-top: 0px;
+	margin-bottom: min(32.0px, 4vw);
 	color: #575757;
 `;
 
 const MyLinks = styled.div`
-	padding-bottom: min(51.2px, 8%);
+	padding-bottom: min(51.2px, 6.4vw);
 `;
 
 const MyLink = styled.a`
 	color: #575757;
 	font-size: min(30px, 4.68vw);
-	font-weight: bold;
-	margin: 0px min(12.8px, 2%);
+	margin: 0px min(12.8px, 1.6vw);
 `;
 
 export const Header: React.FC = () => {
@@ -45,7 +51,8 @@ export const Header: React.FC = () => {
 		<Div>
 			<CenterDiv>
 				<Img src={ProfileImg}/>
-				<Name>まみむめも</Name>
+				<Name>Taiki Yoshii</Name>
+				<Will>ソフトウェアエンジニアを目指しています</Will>
 				<MyLinks>
 					<MyLink href="https://github.com/wakewakame">GitHub</MyLink>
 					<MyLink href="https://twitter.com/hu_123456">Twitter</MyLink>

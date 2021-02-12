@@ -3,9 +3,11 @@ import { Work } from './Types';
 import styled from 'styled-components';
 
 const Div = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, max-content));
+	grid-gap: 16px;
+	justify-content: center;
+	padding: initial;
 `;
 
 export const Timeline: React.FC<{ works: Work[] }> = props => {
