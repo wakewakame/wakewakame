@@ -52,11 +52,12 @@ export const Header: React.FC = () => {
 			<CenterDiv>
 				<Img src={ProfileImg}/>
 				<Name>Taiki Yoshii</Name>
-				<Will>ソフトウェアエンジニアを目指しています</Will>
+				<Will>ソフトウェアエンジニアになるのが夢です</Will>
 				<MyLinks>
 					<MyLink href="https://github.com/wakewakame">GitHub</MyLink>
 					<MyLink href="https://twitter.com/hu_123456">Twitter</MyLink>
 					<MyLink href="https://www.youtube.com/channel/UC4nBE7iKiuUadBNqIYEaztA">YouTube</MyLink>
+					<MyLink href="https://com.nicovideo.jp/live/co2922418">ニコニコ生放送</MyLink>
 				</MyLinks>
 			</CenterDiv>
 		</Div>

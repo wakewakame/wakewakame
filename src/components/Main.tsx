@@ -22,6 +22,7 @@ const Buttons = styled.div`
 `;
 
 const Button = styled.div<{primary: boolean}>`
+	cursor: pointer;
 	padding: 4px 20px;
 	border-radius: 10px;
 	display: inline;

@@ -35,7 +35,7 @@ export const App: React.FC = () => {
 
 	return (
 		<Div>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Switch>
 					<Route exact path="/" component={ () => <Home works={ works }/> }/>
 					<Route path="/contents/:id" component={ () => <Content works={ works }/> }/>
