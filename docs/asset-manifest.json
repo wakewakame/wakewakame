@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wakewakame/static/css/main.e80664e6.chunk.css",
+    "main.js": "/wakewakame/static/js/main.110637db.chunk.js",
+    "main.js.map": "/wakewakame/static/js/main.110637db.chunk.js.map",
+    "runtime-main.js": "/wakewakame/static/js/runtime-main.0ce127d5.js",
+    "runtime-main.js.map": "/wakewakame/static/js/runtime-main.0ce127d5.js.map",
+    "static/js/2.5a96756e.chunk.js": "/wakewakame/static/js/2.5a96756e.chunk.js",
+    "static/js/2.5a96756e.chunk.js.map": "/wakewakame/static/js/2.5a96756e.chunk.js.map",
+    "static/js/3.a5061165.chunk.js": "/wakewakame/static/js/3.a5061165.chunk.js",
+    "static/js/3.a5061165.chunk.js.map": "/wakewakame/static/js/3.a5061165.chunk.js.map",
+    "index.html": "/wakewakame/index.html",
+    "static/css/main.e80664e6.chunk.css.map": "/wakewakame/static/css/main.e80664e6.chunk.css.map",
+    "static/js/2.5a96756e.chunk.js.LICENSE.txt": "/wakewakame/static/js/2.5a96756e.chunk.js.LICENSE.txt",
+    "static/media/header.4b68f4c6.svg": "/wakewakame/static/media/header.4b68f4c6.svg",
+    "static/media/profile.5e84cb91.jpg": "/wakewakame/static/media/profile.5e84cb91.jpg",
+    "static/media/test.ba6fc3ff.jpg": "/wakewakame/static/media/test.ba6fc3ff.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ce127d5.js",
+    "static/js/2.5a96756e.chunk.js",
+    "static/css/main.e80664e6.chunk.css",
+    "static/js/main.110637db.chunk.js"
+  ]
+}
