@@ -8,6 +8,7 @@ import { Work } from './components/Types';
 import HeaderSvg from './contents/header.svg';
 import TestImg from './contents/test.jpg';
 import { AudioNode } from './components/items/AudioNode';
+import { HydrangeaJS } from './components/items/HydrangeaJS';
 
 const Div = styled.div`
 	background-image: url(${HeaderSvg});
@@ -28,7 +29,7 @@ export const App: React.FC = () => {
 
 	const works: Work[] = [
 		AudioNode,
-		createWork("HydrangeaJS", "2019/10/15", "WebGLで開発したGUIフレームワークです"),
+		HydrangeaJS,
 		createWork("SoundGoogleMap", "2019/08/04", "Google Mapを改造して音に合わせて踊るようにしました"),
 	];
 
