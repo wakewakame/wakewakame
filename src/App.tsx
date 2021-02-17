@@ -6,9 +6,9 @@ import { Content } from './components/Content';
 import { NotFound } from './components/NotFound';
 import { Work } from './components/Types';
 import HeaderSvg from './contents/header.svg';
-import TestImg from './contents/test.jpg';
 import { AudioNode } from './components/items/AudioNode';
 import { HydrangeaJS } from './components/items/HydrangeaJS';
+import { SoundGoogleMap } from './components/items/SoundGoogleMap';
 
 const Div = styled.div`
 	background-image: url(${HeaderSvg});
@@ -16,21 +16,10 @@ const Div = styled.div`
 `;
 
 export const App: React.FC = () => {
-	const createWork = (title: string, date: string, desc: string) => {
-		const work: Work = {
-			title: title,
-			date: date,
-			thumbnail: TestImg,
-			description: desc,
-			content: () => (<div></div>),
-		};
-		return work;
-	};
-
 	const works: Work[] = [
 		AudioNode,
 		HydrangeaJS,
-		createWork("SoundGoogleMap", "2019/08/04", "Google Mapを改造して音に合わせて踊るようにしました"),
+		SoundGoogleMap,
 	];
 
 	return (

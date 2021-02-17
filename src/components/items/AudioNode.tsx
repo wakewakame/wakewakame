@@ -51,10 +51,6 @@ const AudioNodeContent: React.FC = () => {
 			</P>
 			<br/>
 			<H1>関連ツイート</H1>
-			<P>
-				多いもので 200いいね ほど頂きました。
-				嬉しい
-			</P>
 			<Tweet tweetId={"1184850474404499462"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1188499265036804096"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1230670758730399744"} options={{ align: "center" }}/>

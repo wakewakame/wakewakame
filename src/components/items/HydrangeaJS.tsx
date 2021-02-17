@@ -22,7 +22,7 @@ const P = styled.p`
 	font-size: 24px;
 `;
 
-const AudioNodeContent: React.FC = () => {
+const HydrangeaJSContent: React.FC = () => {
 	return (
 		<Div>
 			<div style={{textAlign: "center"}}>
@@ -44,10 +44,6 @@ const AudioNodeContent: React.FC = () => {
 			</P>
 			<br/>
 			<H1>関連ツイート</H1>
-			<P>
-				多いもので 900いいね ほど頂きました。
-				嬉しい
-			</P>
 			<Tweet tweetId={"1175426469339656192"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1178240029987991553"} options={{ align: "center" }}/>
 		</Div>
@@ -59,5 +55,5 @@ export const HydrangeaJS: Work = {
 	date:  "2019/10/15",
 	thumbnail: HydrangeaJSImage,
 	description: "WebGLで開発したGUIフレームワークです",
-	content: AudioNodeContent,
+	content: HydrangeaJSContent,
 };
