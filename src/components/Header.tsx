@@ -44,6 +44,7 @@ const MyLink = styled.a`
 	color: #575757;
 	font-size: min(30px, 4.68vw);
 	margin: 0px min(12.8px, 1.6vw);
+	display: inline-block;
 `;
 
 export const Header: React.FC = () => {

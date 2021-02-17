@@ -2,26 +2,38 @@ import styled from 'styled-components';
 
 const Div = styled.div`
 	color: #575757;
+	text-align: center;
 `;
 
 const CenterDiv = styled.div`
+	display: inline-block;
 	text-align: left;
-	padding: 0px max(0px, 10vw);
+	width: min(1024px, 80vw);
 	box-sizing: border-box;
-	margin: auto;
-	font-size: 24px;
+	font-size: min(24px, 3.75vw);
 `;
 
 const H1 = styled.h1`
-	font-size: 36px;
+	font-size: min(36px, 7vw);
 `;
 
 const H2 = styled.h2`
-	font-size: 28px;
+	font-size: min(28px, 5vw);
+	margin-top: 4px;
+	margin-bottom: 4px;
 `;
 
 const P = styled.p`
-	font-size: 24px;
+	font-size: min(24px, 5vw);
+	margin-top: 4px;
+	margin-bottom: 40px;
+`;
+
+const Table = styled.table`
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
 `;
 
 export const About: React.FC = () => {
@@ -29,7 +41,7 @@ export const About: React.FC = () => {
 		<Div>
 			<CenterDiv>
 				<H1>使ったことのある言語</H1>
-				<table>
+				<Table>
 					<tr>
 						<th>言語</th>
 						<th>得意</th>
@@ -72,18 +84,20 @@ export const About: React.FC = () => {
 						<td>♥♥♥♥♥</td>
 						<td>2020年頃</td>
 					</tr>
-				</table>
-				<P>
-					 ★☆☆☆☆: 入門段階<br/>
-					 ★★☆☆☆: 基本文法は理解している<br/>
-					 ★★★☆☆: その言語の作法がなんとなくわかる<br/>
-					 ★★★★☆: その言語を用いて中規模なプログラムを書いたことがある<br/>
-					 ★★★★★: その言語を用いて大規模なプログラムを書いたことがある<br/>
-				</P>
+				</Table>
+				<br/>
+				<Table>
+					<th><td width="160">得意度の目安</td><td></td></th>
+					<tr><td>★☆☆☆☆</td><td>入門段階</td></tr>
+					<tr><td>★★☆☆☆</td><td>基本文法は理解している</td></tr>
+					<tr><td>★★★☆☆</td><td>その言語の作法がなんとなくわかる</td></tr>
+					<tr><td>★★★★☆</td><td>その言語を用いて中規模なプログラムを書いたことがある</td></tr>
+					<tr><td>★★★★★</td><td>その言語を用いて大規模なプログラムを書いたことがある</td></tr>
+				</Table>
 				<br/>
 
 				<H1>使ったことのあるOSやソフト、ツール</H1>
-				<table>
+				<Table>
 					<tr>
 						<th>名称</th>
 						<th>得意</th>
@@ -129,7 +143,7 @@ export const About: React.FC = () => {
 						<td>★★☆☆☆</td>
 						<td>簡単なゲーム程度であれば作れる</td>
 					</tr>
-				</table>
+				</Table>
 				<br/>
 
 				<H1>経歴</H1>
@@ -178,7 +192,7 @@ export const About: React.FC = () => {
 							そのため、openFrameworksに似せたOpenGLベースの独自フレームワークを開発した。
 							(<a href="https://github.com/wakewakame/NodeUI">NodeUI</a>)<br/>
 							<br/>
-							また、デスクトップのアイコンが落下するジョークソフトなんかも作った。<br/>
+							また、デスクトップのアイコンが落下するジョークソフトなども作った。
 							(<a href="https://github.com/wakewakame/GravityDesktop">GravityDesktop</a>)<br/>
 							このプログラムも最初はOpenGLで作成していたが、
 							デスクトップのキャプチャデータがDirectXのテクスチャとして取得されるため、

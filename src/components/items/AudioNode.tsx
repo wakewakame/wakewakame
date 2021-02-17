@@ -15,11 +15,17 @@ const Video = styled.video`
 `;
 
 const H1 = styled.h1`
-	font-size: 36px;
+	font-size: min(36px, 7vw);
 `;
 
 const P = styled.p`
-	font-size: 24px;
+	font-size: min(24px, 5vw);
+	margin-top: 4px;
+	margin-bottom: 40px;
+`;
+
+const A = styled.a`
+	word-break: break-all;
 `;
 
 const AudioNodeContent: React.FC = () => {
@@ -30,8 +36,8 @@ const AudioNodeContent: React.FC = () => {
 					<source src={AudioNodeVideo}/>
 				</Video>
 				<P>
-					デモ: <a href="https://wakewakame.github.io/AudioNode/dst/">https://wakewakame.github.io/AudioNode/dst/</a><br/>
-					リポジトリ: <a href="https://github.com/wakewakame/AudioNode">https://github.com/wakewakame/AudioNode</a>
+					デモ: <A href="https://wakewakame.github.io/AudioNode/dst/">https://wakewakame.github.io/AudioNode/dst/</A><br/>
+					リポジトリ: <A href="https://github.com/wakewakame/AudioNode">https://github.com/wakewakame/AudioNode</A>
 				</P>
 			</div>
 			<br/>
@@ -51,9 +57,9 @@ const AudioNodeContent: React.FC = () => {
 			</P>
 			<br/>
 			<H1>関連ツイート</H1>
-			<Tweet tweetId={"1184850474404499462"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1188499265036804096"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1230670758730399744"} options={{ align: "center" }}/>
+			<Tweet tweetId={"1184850474404499462"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1231370136386334720"} options={{ align: "center" }}/>
 		</Div>
 	);

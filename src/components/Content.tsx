@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation, useParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { NotFound } from './NotFound';
 import { Work } from './Types';
@@ -33,12 +34,6 @@ const Title = styled.div`
 	margin: 10px 0px;
 `;
 
-const Img = styled.img`
-	width: min(1024px, 80vw);
-	height: min(576px, 45vw);
-	object-fit: cover;
-`;
-
 const Desc = styled.div`
 	display: block;
 	text-align: left;
@@ -52,6 +47,11 @@ const P = styled.p`
 `;
 
 export const Content: React.FC<{ works: Work[] }> = props => {
+	const { pathname } = useLocation();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+
 	const { id } = useParams<{id: string}>();
 	const workFind = props.works.filter(t => t.title == id);
 	if (workFind.length != 1) return <NotFound/>;

@@ -10,21 +10,32 @@ const Div = styled.div`
 `
 
 const H1 = styled.h1`
-	font-size: 36px;
+	font-size: min(36px, 7vw);
 `;
 
 const P = styled.p`
-	font-size: 24px;
+	font-size: min(24px, 5vw);
+	margin-top: 4px;
+	margin-bottom: 40px;
+`;
+
+const A = styled.a`
+	word-break: break-all;
+`;
+
+const WYoutube = styled(Youtube)`
+	width: min(1280px, 80vw);
+	height: min(720px, 45vw);
 `;
 
 const SoundGoogleMapContent: React.FC = () => {
 	return (
 		<Div>
 			<div style={{textAlign: "center"}}>
-				<Youtube videoId="0ZR4q2ALdIM"/>
+				<WYoutube videoId="0ZR4q2ALdIM"/>
 				<P>
-					動画: <a href="https://www.youtube.com/watch?v=0ZR4q2ALdIM">https://www.youtube.com/watch?v=0ZR4q2ALdIM</a><br/>
-					リポジトリ: <a href="https://github.com/wakewakame/SoundGoogleMap">https://github.com/wakewakame/SoundGoogleMap</a>
+					動画: <A href="https://www.youtube.com/watch?v=0ZR4q2ALdIM">https://www.youtube.com/watch?v=0ZR4q2ALdIM</A><br/>
+					リポジトリ: <A href="https://github.com/wakewakame/SoundGoogleMap">https://github.com/wakewakame/SoundGoogleMap</A>
 				</P>
 			</div>
 			<br/>
@@ -47,8 +58,8 @@ const SoundGoogleMapContent: React.FC = () => {
 			<br/>
 			<H1>関連ツイート</H1>
 			<Tweet tweetId={"1157966041361682433"} options={{ align: "center" }}/>
-			<Tweet tweetId={"1157967548496789506"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1155143279249199105"} options={{ align: "center" }}/>
+			<Tweet tweetId={"1157967548496789506"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1206596574760976386"} options={{ align: "center" }}/>
 		</Div>
 	);

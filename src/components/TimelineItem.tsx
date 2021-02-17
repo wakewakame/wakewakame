@@ -4,11 +4,9 @@ import styled from 'styled-components';
 
 const Div = styled.div`
 	display: block;
-	width: 360px;
-	height: 360px;
+	width: min(360px, 80vw);
+	height: min(360px, 80vw);
 	display: block;
-	padding: 20px;
-	padding-bottom: 0px;
 	overflow: hidden;
 `;
 
@@ -16,14 +14,14 @@ const Thumbnail = styled(Link)<{img: string}>`
 	display: block;
 	background-image: url(${({img}) => img});
 	background-size: 100%;
-	height: 202px;
-	margin: 4px 0px;
+	height: min(202px, 45vw);
+	margin: min(4px, 0.625vw) 0px;
 `;
 
 const DescDiv = styled.div`
 	display: block;
 	text-align: left;
-	padding: 0px 4px;
+	padding: 0px min(4px, 0.625vw);
 	box-sizing: border-box;
 `;
 
@@ -31,19 +29,19 @@ const Title = styled(Link)`
 	display: inline;
 	color: #575757;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: min(28px, 6.5625vw);
 	text-decoration: none;
 `;
 
 const Date = styled.p`
 	margin: 0px;
-	font-size: 20px;
+	font-size: min(20px, 4.6875vw);
 	color: #777;
 `;
 
 const Desc = styled.p`
 	margin: 0px;
-	font-size: 20px;
+	font-size: min(20px, 4.6875vw);
 	color: #575757;
 `;
 

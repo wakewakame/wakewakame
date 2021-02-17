@@ -7,7 +7,6 @@ import { Work } from './Types';
 
 const Div = styled.div`
 	width: 100vw;
-	margin-bottom: min(300px, 18.75vw);
 `;
 
 const CenterDiv = styled.div`
@@ -17,16 +16,16 @@ const CenterDiv = styled.div`
 `;
 
 const Buttons = styled.div`
-	margin-top: 24px;
-	margin-bottom: 72px;
+	margin-top: min(24px, 3.75vw);
+	margin-bottom: min(36px, 5.625vw);
 `;
 
 const Button = styled.div<{primary: boolean}>`
 	cursor: pointer;
-	padding: 4px 20px;
-	border-radius: 10px;
+	padding: min(4px, 0.625vw) min(20px, 3.125vw);
+	border-radius: min(10px, 1.5625vw);
 	display: inline;
-	font-size: 36px;
+	font-size: min(36px, 5.625vw);
 	font-weight: bold;
 	${({primary}) => primary ? `
 		color: #575757;

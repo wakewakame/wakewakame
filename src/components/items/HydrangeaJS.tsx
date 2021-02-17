@@ -15,11 +15,17 @@ const Video = styled.video`
 `;
 
 const H1 = styled.h1`
-	font-size: 36px;
+	font-size: min(36px, 7vw);
 `;
 
 const P = styled.p`
-	font-size: 24px;
+	font-size: min(24px, 5vw);
+	margin-top: 4px;
+	margin-bottom: 40px;
+`;
+
+const A = styled.a`
+	word-break: break-all;
 `;
 
 const HydrangeaJSContent: React.FC = () => {
@@ -30,8 +36,8 @@ const HydrangeaJSContent: React.FC = () => {
 					<source src={HydrangeaJSVideo}/>
 				</Video>
 				<P>
-					デモ: <a href="https://wakewakame.github.io/HydrangeaJS/">https://wakewakame.github.io/HydrangeaJS/</a><br/>
-					リポジトリ: <a href="https://github.com/wakewakame/HydrangeaJS">https://github.com/wakewakame/HydrangeaJS</a>
+					デモ: <A href="https://wakewakame.github.io/HydrangeaJS/">https://wakewakame.github.io/HydrangeaJS/</A><br/>
+					リポジトリ: <A href="https://github.com/wakewakame/HydrangeaJS">https://github.com/wakewakame/HydrangeaJS</A>
 				</P>
 			</div>
 			<br/>
@@ -44,8 +50,8 @@ const HydrangeaJSContent: React.FC = () => {
 			</P>
 			<br/>
 			<H1>関連ツイート</H1>
-			<Tweet tweetId={"1175426469339656192"} options={{ align: "center" }}/>
 			<Tweet tweetId={"1178240029987991553"} options={{ align: "center" }}/>
+			<Tweet tweetId={"1175426469339656192"} options={{ align: "center" }}/>
 		</Div>
 	);
 };
