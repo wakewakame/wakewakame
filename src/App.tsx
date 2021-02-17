@@ -7,6 +7,7 @@ import { NotFound } from './components/NotFound';
 import { Work } from './components/Types';
 import HeaderSvg from './contents/header.svg';
 import TestImg from './contents/test.jpg';
+import { AudioNode } from './components/items/AudioNode';
 
 const Div = styled.div`
 	background-image: url(${HeaderSvg});
@@ -20,17 +21,15 @@ export const App: React.FC = () => {
 			date: date,
 			thumbnail: TestImg,
 			description: desc,
-			content: desc
+			content: () => (<div></div>),
 		};
 		return work;
 	};
 
 	const works: Work[] = [
-		createWork("ポートフォリオ", "2021/02/13", "このサイト"),
-		createWork("GravityDesktop", "2020/02/13", "デスクトップ上のアイコンが落下します"),
-		createWork("GravityDesktop2", "20XX/02/13", "GravityDesktopの後継です"),
-		createWork("HydrangeaJS", "2021/XX/13", "WebGLを用いた自作UIフレームワークです"),
-		createWork("AudioNode", "2021/02/XX", "ノードベースで音声処理を行うサイトです"),
+		AudioNode,
+		createWork("HydrangeaJS", "2019/10/15", "WebGLで開発したGUIフレームワークです"),
+		createWork("SoundGoogleMap", "2019/08/04", "Google Mapを改造して音に合わせて踊るようにしました"),
 	];
 
 	return (

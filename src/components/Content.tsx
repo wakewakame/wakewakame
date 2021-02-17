@@ -58,13 +58,14 @@ export const Content: React.FC<{ works: Work[] }> = props => {
 
 	const work = workFind[0];
 
+	const Content = work.content;
+
 	return (
 		<Div>
 			<CenterDiv>
 				<Home to='/'>{ "< Home" }</Home>
 				<Title><P>{ work.title }</P></Title>
-				<Img src={ work.thumbnail }/>
-				<Desc><P>{ work.content }</P></Desc>
+				<Desc><Content/></Desc>
 			</CenterDiv>
 		</Div>
 	);
