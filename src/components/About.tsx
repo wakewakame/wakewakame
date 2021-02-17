@@ -47,42 +47,49 @@ export const About: React.FC = () => {
 						<th>得意</th>
 						<th>好き</th>
 						<th>入門時期</th>
+						<th>代表作</th>
 					</tr>
 					<tr>
 						<td width="160">C++</td>
 						<td width="160">★★★★☆</td>
 						<td width="160">♥♥♥♥♡</td>
 						<td width="160">2015年頃</td>
+						<td width="160"><a href="https://github.com/wakewakame/GravityDesktop2">GitHub</a></td>
 					</tr>
 					<tr>
 						<td>JavaScript</td>
 						<td>★★★★☆</td>
 						<td>♥♡♡♡♡</td>
 						<td>2015年頃</td>
+						<td><a href="https://github.com/wakewakame/HydrangeaJS">GitHub</a></td>
 					</tr>
 					<tr>
 						<td>Python</td>
 						<td>★★★☆☆</td>
 						<td>♥♥♡♡♡</td>
 						<td>2015年頃</td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>Java</td>
 						<td>★★★☆☆</td>
 						<td>♥♥♥♡♡</td>
 						<td>2017年頃</td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>C#</td>
 						<td>★★★☆☆</td>
 						<td>♥♥♥♡♡</td>
 						<td>2018年頃</td>
+						<td><a href="https://github.com/wakewakame/Pooop">GitHub</a></td>
 					</tr>
 					<tr>
 						<td>Rust</td>
 						<td>★★☆☆☆</td>
 						<td>♥♥♥♥♥</td>
 						<td>2020年頃</td>
+						<td><a href="https://github.com/wakewakame/REye">GitHub</a></td>
 					</tr>
 				</Table>
 				<br/>
@@ -100,47 +107,38 @@ export const About: React.FC = () => {
 				<Table>
 					<tr>
 						<th>名称</th>
-						<th>得意</th>
 						<th>備考</th>
 					</tr>
 					<tr>
 						<td width="160">Linux</td>
-						<td width="160">★★☆☆☆</td>
 						<td>journalctlなどを用いて簡単な問題の解決ができる</td>
 					</tr>
 					<tr>
 						<td>Git</td>
-						<td>★★☆☆☆</td>
 						<td>branchやsubmoduleはよく使う</td>
 					</tr>
 					<tr>
 						<td>Visual Studio</td>
-						<td>★★☆☆☆</td>
 						<td>デバッガの使い方がある程度わかる</td>
 					</tr>
 					<tr>
 						<td>CMake</td>
-						<td>★★☆☆☆</td>
 						<td>C++の依存ライブラリをCMakeで管理したことがある</td>
 					</tr>
 					<tr>
 						<td>Vim</td>
-						<td>★★☆☆☆</td>
 						<td>Vimだけで中規模な開発ができる</td>
 					</tr>
 					<tr>
 						<td>SQLite</td>
-						<td>★★☆☆☆</td>
 						<td>テーブルの作成や検索ができる</td>
 					</tr>
 					<tr>
 						<td>Nginx</td>
-						<td>★★☆☆☆</td>
 						<td>httpsへの対応やリバースプロキシの設定をしたことがある</td>
 					</tr>
 					<tr>
 						<td>Unity</td>
-						<td>★★☆☆☆</td>
 						<td>簡単なゲーム程度であれば作れる</td>
 					</tr>
 				</Table>
