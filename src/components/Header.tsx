@@ -53,7 +53,7 @@ export const Header: React.FC = () => {
 			<CenterDiv>
 				<Img src={ProfileImg}/>
 				<Name>Taiki Yoshii</Name>
-				<Will>ソフトウェアエンジニアになるのが夢です</Will>
+				<Will>プログラマーになるのが夢です</Will>
 				<MyLinks>
 					<MyLink href="https://github.com/wakewakame">GitHub</MyLink>
 					<MyLink href="https://twitter.com/hu_123456">Twitter</MyLink>

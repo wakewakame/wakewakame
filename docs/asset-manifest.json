@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/wakewakame/static/css/main.e80664e6.chunk.css",
-    "main.js": "/wakewakame/static/js/main.32388419.chunk.js",
-    "main.js.map": "/wakewakame/static/js/main.32388419.chunk.js.map",
+    "main.js": "/wakewakame/static/js/main.ff9c3f8c.chunk.js",
+    "main.js.map": "/wakewakame/static/js/main.ff9c3f8c.chunk.js.map",
     "runtime-main.js": "/wakewakame/static/js/runtime-main.82c2cef8.js",
     "runtime-main.js.map": "/wakewakame/static/js/runtime-main.82c2cef8.js.map",
     "static/js/2.0768a744.chunk.js": "/wakewakame/static/js/2.0768a744.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.82c2cef8.js",
     "static/js/2.0768a744.chunk.js",
     "static/css/main.e80664e6.chunk.css",
-    "static/js/main.32388419.chunk.js"
+    "static/js/main.ff9c3f8c.chunk.js"
   ]
 }
