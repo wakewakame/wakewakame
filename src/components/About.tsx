@@ -91,6 +91,13 @@ export const About: React.FC = () => {
 						<td>2020年頃</td>
 						<td><a href="https://github.com/wakewakame/REye">GitHub</a></td>
 					</tr>
+					<tr>
+						<td>Swift</td>
+						<td>★★★☆☆</td>
+						<td>♥♥♥♡♡</td>
+						<td>2021年頃</td>
+						<td><a href="https://github.com/wakewakame/QuadDump">GitHub</a></td>
+					</tr>
 				</Table>
 				<br/>
 				<Table>
